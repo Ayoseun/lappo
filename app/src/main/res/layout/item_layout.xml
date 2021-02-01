@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginVertical="5dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+android:background="@drawable/bg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintVertical_bias=".1"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="10sp"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="8dp"
+            android:text="TextView"
+            android:textColor="@color/colornewAccent"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/desc"
+            android:textSize="10sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_alignStart="@id/tv_title"
+            android:layout_alignLeft="@id/tv_title"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="16dp"
+            android:lineSpacingExtra="2dp"
+            android:text="you have loan way past it's dues date ,\nfailure to pay causese you to incure debts"
+            android:textColor="@color/blackt" />
+
+        <TextView
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="39dp"
+            android:lineSpacingExtra="8dp"
+            android:text="TextView"
+android:id="@+id/date"
+            android:textColor="@color/bluey" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imag"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/ic_baseline_add_reaction_24"
+        android:layout_marginStart="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp"
+        app:layout_constraintVertical_bias=".1"
+        app:layout_constraintTop_toTopOf="@id/relativeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/relativeLayout"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/blackg"
+    android:layout_height="match_parent"
+    tools:context=".ui.homeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="5dp"
+        app:cardElevation="11dp"
+        app:cardCornerRadius="8dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/middle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="5dp">
+
+            <ImageView
+                android:id="@+id/wallet"
+                android:layout_width="40dp"
+                android:layout_height="44dp"
+                android:layout_gravity="end"
+
+                android:background="#00FFFFFF"
+                android:src="@drawable/ic_baseline_account_balance_wallet_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="My Wallet"
+                android:textColor="@color/bluey"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Micheal Ibrahim"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="4226  5411  1533  0643"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="EXPIRES \nEND OF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/lv1"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="bottom"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/ic_baseline_label_important_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="10dp"
+                    android:text="03/24"
+                    android:textAlignment="gravity"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/middle"
+        android:text="Overview"
+        android:textStyle="bold"
+        android:textColor="@color/colornewAccent"
+        android:layout_marginTop="24dp"
+        android:textSize="10sp"
+        app:layout_constraintHorizontal_bias=".1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ReV"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ReV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/blackg"
+        android:paddingVertical="5dp"
+       android:layout_marginHorizontal="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/middle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
